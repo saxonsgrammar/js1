@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div> 
+        <p>Возведение числа в степень:</p>
+        <label for="">
+            Введите число: <input type="number" id="in1" name="name1">
+            Введите степень: <input type="number" id="in2" name="name2">
+        </label>
+        <button onclick="Power(parseInt(document.getElementById('in1').value), parseInt(document.getElementById('in2').value))">OK</button>
+        <br><br>
+        <span id="span1">Результат:</span>
+
+        <p>Наибольший общий делитель:</p>
+        <label for="">
+            Введите число: <input type="number" id="in3">
+            Введите число: <input type="number" id="in4">
+        </label>
+        <button onclick="GCD(parseInt(document.getElementById('in3').value), parseInt(document.getElementById('in4').value))">OK</button>
+        <br><br>
+        <span id="span2">Результат:</span>
+
+        <p>Наибольшая цифра в числе:</p>
+        <label for="">
+            Введите число: <input type="number" id="in5">
+        </label>
+        <button onclick="Max_Digit(parseInt(document.getElementById('in5').value))">OK</button>
+        <br><br>
+        <span id="span3">Результат:</span>
+
+        <p>Проверка числа на простоту:</p>
+        <label for="">
+            Введите число: <input type="number" id="in6">
+        </label>
+        <button onclick="Is_Prime()">OK</button>
+        <br><br>
+        <span id="span4">Результат:</span>
+        
+        <p>Факторизация:</p>
+        <label for="">
+            Введите число: <input type="number" id="in7">
+        </label>
+        <button onclick="Factorization()">OK</button>
+        <br><br>
+        <span id="span5">Результат:</span>
+
+        <p>n-ое число Фибоначчи:</p>
+        <label for="">
+            Введите число: <input type="number" id="in8">
+        </label>
+        <button onclick="Fib(parseInt(document.getElementById('in8').value))">OK</button>
+        <br><br>
+        <span id="span6">Результат:</span>
+    </div>
+</body>
+</html>
